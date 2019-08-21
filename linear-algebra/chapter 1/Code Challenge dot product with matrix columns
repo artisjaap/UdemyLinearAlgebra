@@ -1,0 +1,13 @@
+import numpy as np
+
+M1 = np.random.random([4, 6])
+M2 = np.random.random([4, 6])
+
+print(M1)
+print(M2)
+
+r = np.zeros([6, 1])
+
+for m in range(6):
+    r[m,0] = np.dot(M1[:,m],M2[:,m]) #:,m => all rows from the mth column
+print(r)
